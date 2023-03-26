@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 7px;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color:rgb(255, 255, 255)
+}
+h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-size: 2rem;
+    line-height: 2;
+}
+
+/* NAV SECTION */
+.nav-container{
+background: #243b53;
+height: 60px;
+}
+
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 2rem;
+}
+
+nav .logo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 146, 146);
+    flex: 2;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex: 1;
+
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 2rem;
+    color: rgb(224, 111, 111);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(109, 109, 109);
+}
+
+/* Hero Section */
+.hero{
+    height: 90vh;
+    position: relative;
+}
+.hero::after{
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  animation: herobg 5s ease-in;
+  background-image:linear-gradient(90deg, rgba(51, 78, 104, 0.2),rgba(20, 63, 92, 0.8)), url(./dddd.jpg);
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+h1 span,
+h3 span{
+    color: blueviolet;
+}
+
+.btn{
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: #27ab83;
+}
+
+.btn:hover{
+    color: blue;
+}
+
+.btn a{
+    color: #000000;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+/* Qualities Section */
+.qualities{
+    width: 90%;
+    margin: 4rem auto;
+    max-width: 1366px;
+    height: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.qualities h2{
+    font-size: 2rem;
+}
+
+.quality-container{
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 2rem;
+    padding-top: 5rem;
+}
+
+.quality{
+    background: #bcccdc;
+    padding: 4rem;
+    width: 30%;
+
+}
+
+.quality p{
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto ;
+}
+.quality h3{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container i{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: #27ab83;
+}
+
+/* About Section */
+.about-container{
+    background: #334e68;
+}
+
+.about-us{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h2{
+    color: azure;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.about-content p{
+    margin-top: 1rem;
+    width: 80%;
+    color: #d5d5d5;
+}
+
+.about-us img{
+    width: 40%;
+    height: 100%;
+}
+
+/* Contact Us section*/
+
+.contact{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;
+    height: 100%;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.contact{
+    font-size: 3rem;
+}
+
+label,
+input,
+textarea{
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+form .btn{
+    width: 100px;
+    align-self: center;
+}
+input,
+textarea {
+    width: 50%;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea{
+    margin-bottom: 1.5rem;
+}
+
+/* footer Section */
+footer{
+    background: #243b53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+footer p{
+    color: #d9d9d9;
+}
+
+/* Animation */
+@keyframes herobg{
+    from{scale: 1.2;}
+    to{scale: 1;}
+}
